@@ -1,13 +1,8 @@
 # Docker Deployment
 
-## Docker Verification
+## Checkpoint 3 – Docker Verification
 
-Docker commands and their results are documented in this file.
+### 1. Check Docker Version
 
-## Nginx Deployment
-
-The Nginx web server was deployed using Docker.
-
-## Container Lifecycle
-
-The container was listed, stopped, verified, and removed using Docker CLI commands.
+```bash
+docker --version
