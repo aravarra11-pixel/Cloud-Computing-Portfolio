@@ -1,15 +1,8 @@
 # MinIO Deployment
 
-## Checkpoint 3 – MinIO Deployment
+## Checkpoint 3 – Deploy MinIO
 
-The MinIO object storage server will be deployed using Docker in the KillerCoda Playground.
+### Docker Command
 
-## Checkpoint 4 – Create a Bucket
-
-The MinIO Web Console will be accessed through port 9001.
-
-The bucket created for this activity is named `client-photos`.
-
-## Checkpoint 5 – Technical Documentation
-
-The exact Docker command, port configuration, bucket name, and environment variables will be documented after completing the deployment.
+```bash
+docker run -d -p 9000:9000 -p 9001:9001 --name minio-server -e "MINIO_ROOT_USER=cloudadmin" -e "MINIO_ROOT_PASSWORD=CloudNova2026!" minio/minio server /data --console-address ":9001"
