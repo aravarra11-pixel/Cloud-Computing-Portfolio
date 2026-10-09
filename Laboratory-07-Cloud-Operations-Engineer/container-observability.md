@@ -1,11 +1,11 @@
-# Container Observability Report
+## Real-Time Container Metrics
 
-## Application Logs
+Command executed: `docker stats`
 
-Command executed: `docker logs client-website`
+- Container name: `client-website`
+- Memory usage: [Actual MEM USAGE value]
+- CPU usage: [Actual CPU % value]
+- Network I/O: [Actual NET I/O value]
 
-### HTTP 404 Error Log
-[Paste the actual 404 log line from your terminal here.]
-
-### Importance of Application Logs
-Application logs help engineers identify errors, failed requests, and other events that occur inside an application. They make troubleshooting easier by providing evidence of what happened and helping engineers determine the possible cause of a problem.
+### Observation
+[Explain briefly what the metrics show about the container's resource consumption at the time of observation.]
